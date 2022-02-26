@@ -1,5 +1,6 @@
 ﻿using System;
 using EstructurasDeDatos.ListaEnlazadaEs;
+using EstructurasDeDatos.ListaEnlazadaEsGenerica;
 
 namespace EstructurasDeDatos
 {
@@ -7,10 +8,10 @@ namespace EstructurasDeDatos
     {
         static void Main(string[] args)
         {
-            ListaEnlazada listaEnlazada = new ListaEnlazada();
+            ListaEnlazadaGenerica<int> listaEnlazada = new ListaEnlazadaGenerica<int>();
 
 
-            listaEnlazada.AgregarNuevoElemento(4);
+            listaEnlazada.AgregarNuevoElemento(1);
             /*listaEnlazada.AgregarNuevoElemento(900);
             listaEnlazada.AgregarNuevoElemento(6);
             listaEnlazada.AgregarNuevoElemento(0);
@@ -21,8 +22,8 @@ namespace EstructurasDeDatos
             listaEnlazada.EliminarElemento(6);
             Console.WriteLine("Se elimina el 0");
             listaEnlazada.EliminarElemento(0);*/
-            Console.WriteLine("Se elimina el 4");
-            listaEnlazada.EliminarElemento(4);
+            //Console.WriteLine("Se elimina el 4");
+            //listaEnlazada.EliminarElemento(1);
             /*Console.WriteLine("Se elimina el 900");
             listaEnlazada.EliminarElemento(900);*/
 
