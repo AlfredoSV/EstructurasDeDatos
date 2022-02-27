@@ -12,6 +12,8 @@ namespace EstructurasDeDatos
 
 
             listaEnlazada.AgregarNuevoElemento(1);
+            listaEnlazada.AgregarNuevoElemento(2);
+            listaEnlazada.AgregarNuevoElemento(3);
             /*listaEnlazada.AgregarNuevoElemento(900);
             listaEnlazada.AgregarNuevoElemento(6);
             listaEnlazada.AgregarNuevoElemento(0);
