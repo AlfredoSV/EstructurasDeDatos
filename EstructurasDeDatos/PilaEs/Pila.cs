@@ -26,8 +26,11 @@ namespace EstructurasDeDatos.PilaEs
             {
                 var nodAux = _nodo;
 
+
                 while (true)
                 {
+
+
                     if (nodAux.Siguiente == null)
                     {
                         nodAux.Siguiente = new Nodo(null, i);
@@ -41,7 +44,26 @@ namespace EstructurasDeDatos.PilaEs
             }
         }
 
+        public void Pop()
+        {
+            var nodAux = _nodo;
+            var nodAuxAnt = _nodo;
 
+            while (true)
+            {
+                if (_nodo.Siguiente == null)
+                    _nodo = null;
+
+                if (nodAux.Siguiente == null)
+                {
+                    nodAuxAnt.Siguiente = null;
+                    break;
+                }
+                nodAuxAnt = nodAux;
+                nodAux = nodAux.Siguiente;
+
+            }
+        }
 
 
     }

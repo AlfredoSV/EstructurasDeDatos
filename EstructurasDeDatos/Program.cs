@@ -47,8 +47,15 @@ namespace EstructurasDeDatos
             Console.WriteLine(pila.PilaVacia());
 
 
+            pila.Pop();
+            pila.Pop();
+            pila.Pop();
 
+            Console.WriteLine(pila.PilaVacia());
 
+            pila.Push(24);
+
+            Console.WriteLine(pila.PilaVacia());
 
         }
     }
