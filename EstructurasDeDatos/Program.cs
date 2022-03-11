@@ -1,4 +1,5 @@
 ﻿using System;
+using EstructurasDeDatos.ColasEs;
 using EstructurasDeDatos.ListaEnlazadaEs;
 using EstructurasDeDatos.ListaEnlazadaEsGenerica;
 using EstructurasDeDatos.PilaEs;
@@ -36,7 +37,7 @@ namespace EstructurasDeDatos
             Console.WriteLine($"La lista está vacia:{listaEnlazada.ListaVacia()}");*/
 
 
-            Pila pila = new Pila();
+            /*Pila pila = new Pila();
 
             Console.WriteLine(pila.PilaVacia());
 
@@ -55,7 +56,17 @@ namespace EstructurasDeDatos
 
             pila.Push(24);
 
-            Console.WriteLine(pila.PilaVacia());
+            Console.WriteLine(pila.PilaVacia());*/
+
+
+            var cola = new Cola();
+            cola.Push(34);
+            
+
+            cola.Pull();
+
+            cola.Push(600);
+            cola.Push(0);
 
         }
     }
